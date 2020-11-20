@@ -29,7 +29,7 @@ void IRAM_ATTR onTimer() {
   portENTER_CRITICAL_ISR(&timerMux);
   frequency=count;
   count=0;
-  //digitalWrite(OSCPIN2, 1-digitalRead(OSCPIN2));x
+  //digitalWrite(OSCPIN2, 1-digitalRead(OSCPIN2));
   digitalWrite(OSCPIN2, 1);
   digitalWrite(OSCPIN2, 0);
   portEXIT_CRITICAL_ISR(&timerMux);
